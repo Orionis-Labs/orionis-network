@@ -1,0 +1,23 @@
+syntax = "proto3";
+package OrionisLabs.orionis.orionis;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/Orionis-Labs/orionis/x/orionis/types";
+
+// Msg defines the Msg service.
+service Msg {
+    // this line is used by starport scaffolding # proto/tx/rpc
+  rpc PaymentMade(MsgPaymentMade) returns (MsgPaymentMadeResponse);
+}
+
+// this line is used by starport scaffolding # proto/tx/message
+message MsgPaymentMade {
+  string creator = 1;
+  uint64 transactionId = 2;
+  uint64 amount = 3;
+  string result = 4;
+}
+
+message MsgPaymentMadeResponse {
+}

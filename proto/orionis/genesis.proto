@@ -1,0 +1,12 @@
+syntax = "proto3";
+package OrionisLabs.orionis.orionis;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/Orionis-Labs/orionis/x/orionis/types";
+
+// GenesisState defines the orionis module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+    // this line is used by starport scaffolding # ibc/genesis/proto
+}
